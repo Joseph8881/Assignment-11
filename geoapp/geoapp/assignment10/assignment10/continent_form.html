@@ -1,0 +1,14 @@
+<h1>Select Continent</h1>
+
+<form method="post" action="/results/">
+  {% csrf_token %}
+  <select name="continent">
+    <option>Africa</option>
+    <option>Europe</option>
+    <option>Asia</option>
+    <option>Americas</option>
+    <option>Oceania</option>
+  </select>
+
+  <button type="submit">Search</button>
+</form>
