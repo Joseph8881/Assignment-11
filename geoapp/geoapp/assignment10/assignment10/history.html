@@ -1,0 +1,10 @@
+<h2>History</h2>
+
+{% for r in records %}
+  <p>
+    {{ r.country }} - {{ r.capital }}<br>
+    Temp: {{ r.temp }}°C<br>
+    Weather: {{ r.desc }}
+  </p>
+  <hr>
+{% endfor %}
