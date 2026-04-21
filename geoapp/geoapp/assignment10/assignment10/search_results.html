@@ -1,0 +1,13 @@
+<h2>Results</h2>
+
+{% for r in results %}
+  <p>
+    <b>{{ r.country }}</b><br>
+    Capital: {{ r.capital }}<br>
+    Temp: {{ r.temp }}°C<br>
+    Weather: {{ r.desc }}
+  </p>
+  <hr>
+{% endfor %}
+
+<a href="/">Go Back</a>
